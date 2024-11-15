@@ -1,0 +1,100 @@
+/* cards/static/cards/css/style.css */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust for darkness */
+    z-index: -1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('{% static "cards/images/bodywallpaper.jpg" %}') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #2a2a2a; /* Fallback color */
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+
+header {
+    background-color: #3b3b3b;
+    padding: 1rem;
+}
+
+#pack-opening button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+#cards-display, #collection-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4f3963; /* Purple background */
+    padding: 0.5rem 1rem;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.6); /* Shadow and glow effect */
+    color: white;
+}
+
+.navbar .logo img {
+    height: 50px; /* Adjust logo size */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white; /* White text for links */
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    opacity: 0.8; /* Hover effect */
+}
+
+
+/* Footer Shadow/Glow */
+.footer {
+    background-color: #4f3963;
+    box-shadow: 0 -4px 8px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.6); /* Shadow and glow effect */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
