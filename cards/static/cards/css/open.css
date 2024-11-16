@@ -1,0 +1,85 @@
+/* Centering the container for the pack and button */
+.open-pack-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* Center vertically */
+    text-align: center;
+}
+.content-box {
+    background: rgba(79, 57, 99, 0.9); /* Dark purple */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.4); /* Soft white glow */
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+}
+@keyframes alternateShadow {
+    0% {
+        box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.4); /* White glow */
+    }
+    25% {
+        box-shadow: 0 4px 15px rgba(255, 165, 0, 0.3), 0 0 10px rgba(255, 165, 0, 0.4); /* Orange glow */
+    }
+    50% {
+        box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3), 0 0 10px rgba(255, 0, 0, 0.4); /* Red glow */
+    }
+    75% {
+        box-shadow: 0 4px 15px rgba(173, 216, 230, 0.3), 0 0 10px rgba(173, 216, 230, 0.4); /* Light blue glow */
+    }
+    100% {
+        box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.4); /* Back to white glow */
+    }
+}
+.content-box {
+    background: rgba(79, 57, 99, 0.9); /* Dark purple */
+    padding: 2rem;
+    border-radius: 10px;
+    animation: alternateShadow 3s infinite; /* 5-second loop */
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+}
+/* Styling the heading */
+.open-pack-container h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    background: rgba(79, 57, 99, 0.6); /* Semi-transparent background for contrast */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+/* Adjusted pack image size */
+.mystery-pack-image {
+    width: 200px; /* Reduced width */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1.5rem;
+}
+/* Button styling */
+.open-pack-button {
+    background-color: #5c858d; /* Muted purple */
+    color: white;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+}
+
+.open-pack-button:hover {
+    background-color: #5c858d; /* Lighter purple on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Spin on hover */
+.mystery-pack-image:hover {
+    transform: rotate(360deg); /* Full spin */
+}

@@ -1,18 +1,19 @@
 {% extends 'cards/index.html' %}
+{% load static %}
 
 {% block title %}Open Packs - Mythra Vault{% endblock %}
 
 {% block content %}
+<link rel="stylesheet" href="{% static 'cards/css/open.css' %}">
+
 <div class="open-pack-container">
-    <h1>Open a Pack</h1>
-    <div class="pack-opening-area">
-        <button class="open-pack-button">Open Pack</button>
-        <div class="card-reveal-area">
-            <!-- Placeholder cards for visualizing layout -->
-            <div class="card-placeholder">Card 1</div>
-            <div class="card-placeholder">Card 2</div>
-            <div class="card-placeholder">Card 3</div>
+    <div class="content-box">
+        <h1>Open a Pack</h1>
+        <div class="pack-image">
+            <img src="{% static 'cards/images/mystery.png' %}" alt="Mysterious Pack" class="mystery-pack-image">
         </div>
+        <button class="open-pack-button" id="open-pack-btn">Open</button>
     </div>
 </div>
+
 {% endblock %}
