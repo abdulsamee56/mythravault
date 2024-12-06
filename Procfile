@@ -1,1 +1,1 @@
-web gunicorn cool_counters.wsgi:application --log-file -
+web: gunicorn mythra_vault.wsgi:application --log-file -
