@@ -37,7 +37,7 @@
     background: rgba(79, 57, 99, 0.9); /* Dark purple */
     padding: 2rem;
     border-radius: 10px;
-    animation: alternateShadow 3s infinite; /* 5-second loop */
+    animation: alternateShadow 3s infinite; /* 5-second loop */ 
     max-width: 500px;
     width: 90%;
     margin: 0 auto;
